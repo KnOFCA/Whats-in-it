@@ -19,12 +19,14 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="D2D.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="Core\Core.cpp" />
+    <ClCompile Include="Starter\D2D.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="BaseWindow.hpp" />
-    <ClInclude Include="thread pool.hpp" />
+    <ClInclude Include="Starter\APISwitch.h" />
+    <ClInclude Include="Starter\BaseWindow.hpp" />
+    <ClInclude Include="Core\Core.h" />
+    <ClInclude Include="Support\thread pool.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
