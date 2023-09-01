@@ -19,9 +19,11 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="D2D.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="BaseWindow.hpp" />
     <ClInclude Include="thread pool.hpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">

@@ -1,4 +1,4 @@
-// include the basic windows header file
+#if 0
 #include <windows.h>
 #include <windowsx.h>
 #include <tchar.h>
@@ -17,7 +17,8 @@ int WINAPI wWinMain(
 	_In_ LPWSTR lpCmdLine,
 	_In_ int nCmdShow)
 {
-	// the handle for the window, filled by a function
+	HRESULT hr = CoInitializeEx(NULL, COINIT_APARTMENTTHREADED | COINIT_DISABLE_OLE1DDE);
+
 	HWND hWnd;
 	// this struct holds information for the window class
 	WNDCLASSEX wc;
@@ -69,7 +70,8 @@ int WINAPI wWinMain(
 		DispatchMessage(&msg);
 	}
 
-	// return this part of the WM_QUIT message to Windows
+	CoUninitialize();
+
 	return msg.wParam;
 }
 
@@ -100,3 +102,4 @@ LRESULT CALLBACK WindowProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lPara
 	// Handle any messages the switch statement didn't
 	return DefWindowProc(hWnd, message, wParam, lParam);
 }
+#endif
