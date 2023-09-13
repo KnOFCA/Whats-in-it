@@ -1,13 +1,39 @@
+#pragma once
 
 namespace Core
 {
-	struct Point
+	struct point
 	{
 		int x, y;
-		Point() :x(), y() {};
-		Point(int& x, int& y) : x(x), y(y) {};
-		Point(const Point& other) : x(other.x), y(other.y) {};
+		point() :x(), y() {};
+		point(int& x, int& y) : x(x), y(y) {};
+		point(const point& other) : x(other.x), y(other.y) {};
 	};
 
-	class 
+	struct camera
+	{
+		point pos;
+	};
+
+	class hitbox
+	{
+	protected:
+		point ori;
+		//
+		int height, len;
+
+	public:
+		virtual void paint() = 0;
+		virtual int flush() = 0;
+	};
+
+	class player :hitbox
+	{
+	private:
+		texture tex;
+
+	public:
+		void load_texture(texture& tex) {}
+		void paint() {}
+	};
 }

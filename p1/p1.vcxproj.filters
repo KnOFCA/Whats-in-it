@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Starter\D2D.cpp">
+    <ClCompile Include="platform\D2D.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="Core\Core.cpp">
@@ -23,10 +23,10 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Starter\APISwitch.h">
+    <ClInclude Include="platform\APISwitch.h">
       <Filter>头文件</Filter>
     </ClInclude>
-    <ClInclude Include="Starter\BaseWindow.hpp">
+    <ClInclude Include="platform\BaseWindow.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="Core\Core.h">
