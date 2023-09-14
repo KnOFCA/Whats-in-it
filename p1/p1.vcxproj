@@ -26,7 +26,12 @@
     <ClInclude Include="platform\APISwitch.h" />
     <ClInclude Include="platform\BaseWindow.hpp" />
     <ClInclude Include="Core\Core.h" />
+    <ClInclude Include="platform\show.h" />
     <ClInclude Include="Support\thread pool.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="docs\module.txt" />
+    <Text Include="docs\standard cpp-lang use.txt" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>17.0</VCProjectVersion>
@@ -87,7 +92,7 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>
     <IntDir>$(SolutionDir)bin\intermediates\$(ProjectName)\$(Platform)\$(Configuration)\</IntDir>
-    <EnableClangTidyCodeAnalysis>true</EnableClangTidyCodeAnalysis>
+    <EnableClangTidyCodeAnalysis>false</EnableClangTidyCodeAnalysis>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)bin\$(ProjectName)\$(Platform)\$(Configuration)\</OutDir>

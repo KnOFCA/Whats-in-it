@@ -35,5 +35,12 @@
     <ClInclude Include="Support\thread pool.hpp">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="platform\show.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="docs\module.txt" />
+    <Text Include="docs\standard cpp-lang use.txt" />
   </ItemGroup>
 </Project>

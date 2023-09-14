@@ -1,0 +1,41 @@
+M.1 logical module
+	1.1 position
+		To identify and specialize an obj.
+	1.2 detection
+		How an obj works with others.
+	1.3 movement <- other module
+		Get player's input and flush pos.
+	1.4 display -> other module
+		Render obj.
+	1.5 build scene ->display module
+	               |<-resource manage module
+
+M.2 display module
+	2.1 API use
+		Call 2Dgraph APIs.
+	2.2 tools
+		Organize APIs to funcs.
+	2.3 prepare src <-> other module
+		Load texture, animation and other src.
+	2.4 display -> other module
+		Give funcs for other module to call.
+	2.5 get input -> other module
+		Get keybroad & mouse input.
+
+M.3 UI module
+	3.1 visual design
+	
+	3.2 ease of use
+		Make level editor code free.
+	\\todo
+
+M.4 3rd party SDK
+	4.1 audio SDK
+	4.2 graph load SDK
+	\\todo
+
+M.5 resource manage module
+	5.1 load display data -> other module
+		load texture and other data from disk.
+	5.2 load level data
+		

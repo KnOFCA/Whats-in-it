@@ -1,5 +1,6 @@
 #pragma once
 
+#include <stdint.h>
 namespace Core
 {
 	struct point
@@ -21,6 +22,7 @@ namespace Core
 		point ori;
 		//
 		int height, len;
+		uint32_t id;//bite use
 
 	public:
 		virtual void paint() = 0;
@@ -30,10 +32,10 @@ namespace Core
 	class player :hitbox
 	{
 	private:
-		texture tex;
+		//textureID tex;
 
 	public:
-		void load_texture(texture& tex) {}
+		//void load_texture(textureID& tex) {}
 		void paint() {}
 	};
 }
